@@ -5,6 +5,7 @@
     android:background="#9E9B9B"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <!-- NOTE LIST SHOWS HERE -->
     <ImageView
         android:id="@+id/note_icon"
         android:layout_marginTop="60dp"
@@ -23,7 +24,7 @@
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
+    <!-- Add Note button -->
     <Button
         android:id="@+id/goToAddNote"
         android:text="Add New Note"

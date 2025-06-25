@@ -5,7 +5,7 @@
     android:orientation="horizontal"
     android:padding="12dp"
     android:background="@drawable/list_item">
-
+    <!-- NOTE -->
     <ImageView
         android:id="@+id/icon"
         android:layout_width="32dp"
