@@ -12,7 +12,7 @@
         android:layout_height="32dp"
         android:src="@drawable/note_icon"
         android:layout_marginEnd="12dp" />
-
+    <!-- Note Text -->
     <TextView
         android:id="@+id/noteText"
         android:layout_width="wrap_content"
