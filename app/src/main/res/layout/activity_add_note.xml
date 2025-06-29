@@ -15,7 +15,7 @@
         android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
+    <!-- Add Note bText Here  -->
     <EditText
         android:id="@+id/noteInput"
         android:hint="Type something..."
