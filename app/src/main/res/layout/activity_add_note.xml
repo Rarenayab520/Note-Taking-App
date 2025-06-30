@@ -8,7 +8,7 @@
     android:background="#9E9B9B">
     <!-- Add NOTE -->
     <TextView
-        android:text="✍️ Write your Note here!"
+        android:text=" Write your Note here!"
         android:textSize="22sp"
         android:layout_gravity="center"
         android:textColor="#000000"
