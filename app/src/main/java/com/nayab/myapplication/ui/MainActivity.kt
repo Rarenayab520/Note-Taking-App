@@ -8,6 +8,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.nayab.myapplication.R
 import com.nayab.myapplication.data.Note
+import androidx.core.view.WindowInsetsControllerCompat
+import androidx.core.content.ContextCompat
 import com.nayab.myapplication.data.NoteDatabase
 import kotlinx.coroutines.launch
 
@@ -20,6 +22,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        WindowInsetsControllerCompat(window, window.decorView).isAppearanceLightStatusBars = false
+        window.statusBarColor = ContextCompat.getColor(this, android.R.color.black)
+
 
         listView = findViewById(R.id.listView)
         emptyText = findViewById(R.id.emptyText)

@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.nayab.myapplication.R
 import com.nayab.myapplication.data.Note
+import androidx.core.view.WindowInsetsControllerCompat
+import androidx.core.content.ContextCompat
 import com.nayab.myapplication.data.NoteDatabase
 import kotlinx.coroutines.launch
 
@@ -16,6 +18,9 @@ class AddNoteActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_note)
+
+        WindowInsetsControllerCompat(window, window.decorView).isAppearanceLightStatusBars = false
+        window.statusBarColor = ContextCompat.getColor(this, android.R.color.black)
 
         input = findViewById(R.id.noteInput)
         saveBtn = findViewById(R.id.saveNoteButton)
